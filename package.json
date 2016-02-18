@@ -1,0 +1,32 @@
+{
+  "name": "detonate",
+  "version": "0.0.0",
+  "description": "Go boom! with a clean, compact syntax for your javascript type checking.",
+  "license": "MIT",
+  "repository": "radiovisual/detonate",
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "wuergler@gmail.com",
+    "url": "numetriclabs.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && nyc ava",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "coveralls": "^2.11.6",
+    "nyc": "^5.6.0",
+    "xo": "^0.12.1"
+  }
+}
