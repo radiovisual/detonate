@@ -24,7 +24,7 @@ boom.if('foo').not.typeof('function');
 
 ## Why?
 
-`detonate` saves you time and makes your programs more compact by taking these common checks:
+Instead of typing this:
 
 ```js
 if (typeof str !== 'string') {
@@ -32,7 +32,7 @@ if (typeof str !== 'string') {
 }
 ```
 
-and converting them to this:
+You can just type this:
 
 ```js
 boom.if(str).not.typeof('string');
@@ -58,7 +58,7 @@ boom.if(str).not.typeof('string');
 
 #### target
 
-Type: `string|number|object|function`
+Type: `string|number|object|function|symbol`
 
 This is the item you want to evaluate for type, equality, etc.
 
@@ -79,7 +79,12 @@ boom.if('string').not.typeof('function');
 
 ##### .typeof(type)
 
-`.typeof` will check the value of `typeof <type>`
+##### type
+
+Type: `String`  
+Options: `'number'`, `'string'`, `'object'`, `'boolean'`, `'object'`, `'undefined'`, `'symbol'`
+
+This is the string identifier that is returned from the [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) operator: 
 
 ```js
 boom.if('string').is.not.typeof('function');
