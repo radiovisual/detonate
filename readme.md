@@ -1,6 +1,6 @@
 # detonate
 
-> Go boom! with a clean, compact syntax for your javascript type checking.
+> Go boom! with a clean, compact syntax for your javascript type checking & error throwing.
 
 [![Build Status](https://travis-ci.org/radiovisual/detonate.svg?branch=master)](https://travis-ci.org/radiovisual/detonate) [![Coverage Status](https://coveralls.io/repos/github/radiovisual/detonate/badge.svg?branch=master)](https://coveralls.io/github/radiovisual/detonate?branch=master)
  

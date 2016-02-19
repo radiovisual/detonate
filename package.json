@@ -1,7 +1,7 @@
 {
   "name": "detonate",
   "version": "0.0.2",
-  "description": "Go boom! with a clean, compact syntax for your javascript type checking.",
+  "description": "Go boom! with a clean, compact syntax for your javascript type checking & error throwing.",
   "license": "MIT",
   "repository": "radiovisual/detonate",
   "author": {
