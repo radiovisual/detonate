@@ -18,7 +18,7 @@ $ npm install --save detonate
 ```js
 const boom = require('detonate');
 
-boom().if('foo').not.typeof('function');
+boom.if('foo').not.typeof('function');
 //=> TypeError: Expected a function
 ```
 
@@ -35,23 +35,26 @@ if (typeof str !== 'string') {
 and converting them to this:
 
 ```js
-boom().if(str).not.typeof('string');
+boom.if(str).not.typeof('string');
 ```
 
 Both blocks of code do the exact same thing (they throw the exact same error, if applicable), but detonate does the same with less code, and better readability.
 
-You can also do the same thing with detonate's readability enhancers and aliases. For example, all of these statements are equivalent, you can work with the style you like the best:
+You can also do the same thing with detonate's readability enhancers and aliases. For example, all of these statements are equivalent; You can work with the style you like the best:
 
 ```js
-boom().if(str).is.not.a('string');
-boom().if(str).not.a('string');
-boom().if(str).is.not.typeof('string');
-boom().if(str).not.typeof('string');
+// is.not.a
+boom.if(str).is.not.a('string');
+boom.if(str).not.a('string');
+
+// is.not.typeof
+boom.if(str).is.not.typeof('string');
+boom.if(str).not.typeof('string');
 ```
 
 ## API
 
-### detonate().if(target)
+### detonate.if(target)
 
 #### target
 
@@ -70,8 +73,8 @@ You can chain new items onto the `if()` function, such as:
 These two statements are opposite:
 
 ```js
-boom().if('string').typeof('function');
-boom().if('string').not.typeof('function');
+boom.if('string').typeof('function');
+boom.if('string').not.typeof('function');
 ```
 
 ##### .typeof(type)
@@ -79,7 +82,7 @@ boom().if('string').not.typeof('function');
 `.typeof` will check the value of `typeof <type>`
 
 ```js
-boom().if('string').is.not.typeof('function');
+boom.if('string').is.not.typeof('function');
 ```
 
 ##### .equal(value)
@@ -87,7 +90,7 @@ boom().if('string').is.not.typeof('function');
 `.equal` will check the equality of `<value>`
 
 ```js
-boom().if('foo').is.equal('bar');
+boom.if('foo').is.equal('bar');
 ```
 
 ##### .equals(value)
@@ -101,8 +104,8 @@ boom().if('foo').is.equal('bar');
 These statements are equivalent:
 
 ```js
-boom().if('string').is.not.a('function');
-boom().if('string').is.not.typeof('function');
+boom.if('string').is.not.a('function');
+boom.if('string').is.not.typeof('function');
 ```
 
 #### Readability Enhancers
@@ -112,9 +115,9 @@ The only purpose of `.is` and `.does` is to enhance the readability of your stat
 For example, these statements are equivalent:
 
 ```js
-boom().if('foo').does.not.equal('bar');
-boom().if('foo').is.not.equal('bar');
-boom().if('foo').not.equal('bar');
+boom.if('foo').does.not.equal('bar');
+boom.if('foo').is.not.equal('bar');
+boom.if('foo').not.equal('bar');
 ```
 
 ## License

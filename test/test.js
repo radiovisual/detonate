@@ -1,17 +1,17 @@
 import test from 'ava';
-import boom from './../lib/index.js';
+import types from './../lib/types.js';
 
 test('types', t => {
-	t.is(boom.types.string, 'string');
-	t.is(boom.types.function, 'function');
-	t.is(boom.types.object, 'object');
-	t.is(boom.types.boolean, 'boolean');
-	t.is(boom.types.array, 'array');
-	t.is(boom.types.date, 'date');
-	t.is(boom.types.number, 'number');
-	t.is(boom.types.regex, 'regex');
-	t.is(boom.types.null, 'null');
-	t.is(boom.types.undefined, 'undefined');
-	t.is(boom.types.symbol, 'symbol');
-	t.is(boom.types.promise, 'promise');
+	t.is(types.string, 'string');
+	t.is(types.function, 'function');
+	t.is(types.object, 'object');
+	t.is(types.boolean, 'boolean');
+	t.is(types.array, 'array');
+	t.is(types.date, 'date');
+	t.is(types.number, 'number');
+	t.is(types.regex, 'regex');
+	t.is(types.null, 'null');
+	t.is(types.undefined, 'undefined');
+	t.is(types.symbol, 'symbol');
+	t.is(types.promise, 'promise');
 });
