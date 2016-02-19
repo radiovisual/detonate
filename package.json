@@ -20,7 +20,25 @@
     "lib"
   ],
   "keywords": [
-    ""
+    "boom",
+    "detonate",
+    "assert",
+    "throw",
+    "type",
+    "check",
+    "checking",
+    "library",
+    "equal",
+    "typeof",
+    "equality",
+    "is",
+    "a",
+    "value",
+    "types",
+    "evaluate",
+    "error",
+    "TypeError",
+    "Error"
   ],
   "dependencies": {},
   "devDependencies": {
