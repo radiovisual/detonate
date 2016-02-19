@@ -7,7 +7,7 @@ import boom from './../lib/index.js';
 
 test('detonates not.typeof', t => {
 	t.throws(() => {
-		boom().if('string').not.typeof('function');
+		boom.if('string').not.typeof('function');
 	}, 'Expected a function');
 });
 
