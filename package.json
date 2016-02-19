@@ -1,6 +1,6 @@
 {
   "name": "detonate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Go boom! with a clean, compact syntax for your javascript type checking.",
   "license": "MIT",
   "repository": "radiovisual/detonate",
