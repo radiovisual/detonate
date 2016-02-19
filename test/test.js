@@ -1,5 +1,6 @@
 import test from 'ava';
 import types from './../lib/types.js';
+import fn from './../lib/index.js';
 
 test('types', t => {
 	t.is(types.string, 'string');
@@ -14,4 +15,8 @@ test('types', t => {
 	t.is(types.undefined, 'undefined');
 	t.is(types.symbol, 'symbol');
 	t.is(types.promise, 'promise');
+});
+
+test('allows custom name', t => {
+	t.is(typeof fn.if().is.a, 'function');
 });

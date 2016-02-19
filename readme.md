@@ -120,6 +120,25 @@ boom.if('foo').is.not.equal('bar');
 boom.if('foo').not.equal('bar');
 ```
 
+#### Tips
+
+- **Have some fun with the way your code reads:** Try naming the `detonate` library something fun to give your source code a little humor:
+
+    ```js
+    var panic = require('detonate');
+    panic.if('string01').does.not.equal('string02');
+    
+    var cry = require('detonate');
+    cry.if('string01').does.not.equal('string02');
+    ```
+    
+- **Save even more keystrokes:** Name the `detonate` library something short to lessen the already condensed syntax:
+
+    ```js
+    var x = require('detonate');
+    x.if('string01').does.not.equal('string02');
+    ```
+
 ## License
 
 MIT © [Michael Wuergler](http://numetriclabs.com)
