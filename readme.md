@@ -144,6 +144,12 @@ boom.if('foo').not.equal('bar');
     x.if('string01').does.not.equal('string02');
     ```
 
+## Related
+
+- [throwif](https://github.com/radiovisual/throwif) Super-compact syntax for your type checking and throw statements. 
+
+
 ## License
 
 MIT © [Michael Wuergler](http://numetriclabs.com)
+
